@@ -4,6 +4,15 @@
 
 export const environment = {
   production: false,
+  firebase: {
+    apiKey: "AIzaSyCkV9ld3ih9v1yPv_8G8uPCH-Ja_G_LTCA",
+    authDomain: "uyghur-american-cup.firebaseapp.com",
+    projectId: "uyghur-american-cup",
+    storageBucket: "uyghur-american-cup.appspot.com",
+    messagingSenderId: "574911793199",
+    appId: "1:574911793199:web:e96a5be2241419a4461eda",
+    measurementId: "G-QM75DP43TZ"
+  }
 };
 
 /*

@@ -31,7 +31,15 @@
       fill="#022f56"
     ></path>
   </svg>
-  <h1>Welcome to {{ title }}!</h1>
+  <h1>Welcome to {{ title }}!</h1><br>
+  <div *ngIf="auth.user | async as user; else showLogin">
+    <h1>Hello {{ user.displayName }}!</h1>
+    <button (click)="logout()">Logout</button>
+  </div>
+  <ng-template #showLogin>
+    <p>Please login.</p>
+    <button (click)="login()">Login with Google</button>
+  </ng-template>
 </header>
 <main>
   <h2>Resources &amp; Tools</h2>
